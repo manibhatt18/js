@@ -43,3 +43,18 @@ console.log(obj5)
 console.log(Object.keys(tinderUser))
 console.log(Object.values(tinderUser))
 console.log(tinderUser.hasOwnProperty('by')) // checks whether the object has mentioned property or not
+
+// destructure object
+const course = {
+    coursename : "js for beginners",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+const {courseInstructor} = course
+console.log(courseInstructor) // we eliminated the need of writing "course." 
+console.log(course.courseInstructor)
+
+// or we can assign any name to courseInstructor as shown below:
+ const {courseInstructor : bimal} = course 
+ console.log(course.courseInstructor)
+ console.log(bimal) // op is Hitesh
